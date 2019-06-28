@@ -13,12 +13,6 @@ def talkToMe(audio):
     for line in audio.splitlines():
         os.system("say " + audio)
 
-    #  use the system's inbuilt say command instead of mpg123
-    #  text_to_speech = gTTS(text=audio, lang='en')
-    #  text_to_speech.save('audio.mp3')
-    #  os.system('mpg123 audio.mp3')
-
-
 def myCommand():
     "listens for commands"
 
@@ -81,3 +75,4 @@ while True:
     assistant(myCommand())
 
 
+`
